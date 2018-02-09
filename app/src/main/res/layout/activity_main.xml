@@ -3,9 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorBackground"
     tools:context="com.example.admin.remindme.MainActivity"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_layout">
 
 
     <android.support.design.widget.CoordinatorLayout
@@ -22,6 +24,16 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"/>
 
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/white"
+                app:tabIndicatorHeight="6dp"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/white">
+
+            </android.support.design.widget.TabLayout>
+
         </android.support.design.widget.AppBarLayout>
 
     </android.support.design.widget.CoordinatorLayout>
@@ -31,7 +43,9 @@
         android:id="@+id/navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start" />
+        android:layout_gravity="start"
+        app:menu="@menu/menu_navigation"
+        app:headerLayout="@layout/navigation_drawer_header"/>
 
 
 
