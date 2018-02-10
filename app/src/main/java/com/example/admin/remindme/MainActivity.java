@@ -1,5 +1,6 @@
 package com.example.admin.remindme;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -7,14 +8,12 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.example.admin.remindme.adapter.TabsPagerFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
-
     private static final int MAIN_LAYOUT = R.layout.activity_main;
 
     private Toolbar toolbar;
