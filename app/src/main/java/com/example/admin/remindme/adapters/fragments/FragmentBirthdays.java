@@ -1,4 +1,4 @@
-package com.example.admin.remindme.adapter.fragments;
+package com.example.admin.remindme.adapters.fragments;
 
 import android.content.Context;
 import android.os.Bundle;

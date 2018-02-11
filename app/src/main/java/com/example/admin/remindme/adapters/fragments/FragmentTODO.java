@@ -1,4 +1,4 @@
-package com.example.admin.remindme.adapter.fragments;
+package com.example.admin.remindme.adapters.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,13 +10,13 @@ import android.view.ViewGroup;
 
 import com.example.admin.remindme.R;
 
-public class FragmentIdeas extends CustomFragment {
+public class FragmentTODO extends CustomFragment {
     private static final int LAYOUT = R.layout.fragment_example;
 
-    public static FragmentIdeas getInstance(Context context){
+    public static FragmentTODO getInstance(Context context){
         Bundle args = new Bundle();
-        FragmentIdeas exampleFragment = new FragmentIdeas();
-        exampleFragment.setTitle(context.getString(R.string.tab_ideas));
+        FragmentTODO exampleFragment = new FragmentTODO();
+        exampleFragment.setTitle(context.getString(R.string.tab_todo));
         exampleFragment.setArguments(args);
 
         return exampleFragment;

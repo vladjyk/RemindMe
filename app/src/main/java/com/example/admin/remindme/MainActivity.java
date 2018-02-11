@@ -11,7 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.admin.remindme.adapter.TabsFragmentAdapter;
+import com.example.admin.remindme.adapters.TabsFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
     private static final int MAIN_LAYOUT = R.layout.activity_main;

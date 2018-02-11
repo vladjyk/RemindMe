@@ -1,4 +1,4 @@
-package com.example.admin.remindme.adapter;
+package com.example.admin.remindme.adapters;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -7,11 +7,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.admin.remindme.Const;
-import com.example.admin.remindme.adapter.fragments.CustomFragment;
-import com.example.admin.remindme.adapter.fragments.FragmentBirthdays;
-import com.example.admin.remindme.adapter.fragments.FragmentHistory;
-import com.example.admin.remindme.adapter.fragments.FragmentIdeas;
-import com.example.admin.remindme.adapter.fragments.FragmentTODO;
+import com.example.admin.remindme.adapters.fragments.CustomFragment;
+import com.example.admin.remindme.adapters.fragments.FragmentBirthdays;
+import com.example.admin.remindme.adapters.fragments.FragmentHistory;
+import com.example.admin.remindme.adapters.fragments.FragmentIdeas;
+import com.example.admin.remindme.adapters.fragments.FragmentTODO;
 
 import java.util.HashMap;
 import java.util.Map;
