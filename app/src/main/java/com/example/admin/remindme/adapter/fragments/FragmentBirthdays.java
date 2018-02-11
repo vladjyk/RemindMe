@@ -1,23 +1,22 @@
-package com.example.admin.remindme.adapter.fragment;
+package com.example.admin.remindme.adapter.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.admin.remindme.R;
 
-public class ExampleFragment extends Fragment {
+public class FragmentBirthdays extends CustomFragment {
     private static final int LAYOUT = R.layout.fragment_example;
 
-    private View view;
-
-    public static ExampleFragment getInstance(){
+    public static FragmentBirthdays getInstance(Context context){
         Bundle args = new Bundle();
-        ExampleFragment exampleFragment = new ExampleFragment();
+        FragmentBirthdays exampleFragment = new FragmentBirthdays();
+        exampleFragment.setTitle(context.getString(R.string.tab_birthdays));
         exampleFragment.setArguments(args);
 
         return exampleFragment;
@@ -26,7 +25,6 @@ public class ExampleFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(LAYOUT,container,false);
-        return view;
+        return inflater.inflate(LAYOUT,container,false);
     }
 }
